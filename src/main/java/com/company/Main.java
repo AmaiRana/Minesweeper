@@ -10,9 +10,9 @@ public class Main {
         Scanner in = new Scanner(System.in);
         System.out.println("Welcome to Minesweeper!");
         System.out.println("Would you like to play?: ");
-        System.out.print("Enter 1 for yes, and 2 for no");
+        System.out.print("Please enter yes or no");
         String choice = in.nextLine();
-        if (choice == "yes") {
+        if (choice != null && choice.equals("yes")) {
             System.out.println("Grid is 10x10");
             System.out.println();
             show.genGrid();
